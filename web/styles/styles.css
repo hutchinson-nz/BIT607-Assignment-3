@@ -51,10 +51,7 @@ h1,h2,h3,h4,h5,h6 {
   .social-icons {
     font-size: 10vw;
   }
-  .nav-text {
+  .nav-text, .drinks {
     font-size: 3vw;
-  }
-  .drinks {
-    font-size: 3.5vw;
   }
 }
