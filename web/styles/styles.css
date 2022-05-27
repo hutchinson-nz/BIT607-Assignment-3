@@ -47,7 +47,7 @@ h1,h2,h3,h4,h5,h6 {
 @media only screen and (max-width: 600px) {
   h1,h2,h3,h4,h5,h6 {
     color: blue;
-    font-size: 4vw;
+    font-size: 4.5vw;
   }
   .social-icons {
     font-size: 10vw;
