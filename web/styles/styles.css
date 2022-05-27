@@ -44,12 +44,12 @@ h1,h2,h3,h4,h5,h6 {
   margin: 0;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 600px) {
   h1,h2,h3,h4,h5,h6 {
     font-size: 4vw;
   }
   .nav-text {
-    font-size: 2vw;
+    font-size: 1vw;
   }
   
 }
