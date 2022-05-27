@@ -3,7 +3,11 @@ body, html {
 }
 
 body,h1,h2,h3,h4,h5,h6 {
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-size: 2vw;
 }
 
 .iframes {
@@ -34,4 +38,18 @@ body,h1,h2,h3,h4,h5,h6 {
 
 .social-icons:hover {
     color:rgb(162, 0, 37);
+}
+
+.nomargin {
+  margin: 0;
+}
+
+@media only screen and (max-width: 800px) {
+  h1,h2,h3,h4,h5,h6 {
+    font-size: 4vw;
+  }
+  .nav-text {
+    font-size: 2vw;
+  }
+  
 }
