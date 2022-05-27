@@ -54,5 +54,7 @@ h1,h2,h3,h4,h5,h6 {
   .nav-text {
     font-size: 3vw;
   }
-  
+  .drinks {
+    font-size: 3vw;
+  }
 }
