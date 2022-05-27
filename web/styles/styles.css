@@ -1,0 +1,37 @@
+body, html {
+    height: 100%
+}
+
+body,h1,h2,h3,h4,h5,h6 {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.iframes {
+  width: 100%;
+}
+
+.headingcolor {
+  color:rgb(162, 0, 37);
+  padding: 0;
+}
+
+.liststyle {
+  list-style: none;
+}
+
+.bgimg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../images/HeroPicWide.jpg");
+    min-height: 90%;
+}
+
+.social-icons {
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 5vw;
+}
+
+.social-icons:hover {
+    color:rgb(162, 0, 37);
+}
