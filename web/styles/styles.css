@@ -48,6 +48,9 @@ h1,h2,h3,h4,h5,h6 {
   h1,h2,h3,h4,h5,h6 {
     font-size: 4vw;
   }
+  .social-icons {
+    font-size: 3vw;
+  }
   .nav-text {
     font-size: 1vw;
   }
