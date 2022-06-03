@@ -24,18 +24,40 @@
         <img src="./images/HaukaiLogo.png" class="w3-padding-small logo-size" alt="Haukai Restaurant Logo">
     </header>
 
-    <!-- Navbar (sit on top) 
     <div class="w3-row w3-center">
-      <div class="w3-bar w3-small w3-hover-opacity-off">
-        <a href="./pages/Menu.html" class="w3-bar-item w3-button">MENU</a>
-        <a href="./pages/Reservations.html" class="w3-bar-item w3-button">RESERVATIONS</a>
-        <a href="./pages/Contacts.html" class="w3-bar-item w3-button">CONTACT</a>
-        <a href="./pages/Staff_Public.html" class="w3-bar-item w3-button">STAFF</a>
+      <div class="w3-bar w3-center">
+        <a href="./home.html" class="w3-bar-item w3-button">HOME</a>
+        <div class="w3-dropdown-hover">
+          <button class="w3-button w3-hide-small">MENU <i class="fa fa-caret-down"></i></button>
+          <div class="w3-dropdown-content w3-bar-block w3-dark-grey">
+            <a href="./pages/Beverages.html" class="w3-bar-item w3-button">BEVERAGES</a>
+            <a href="./pages/Appetisers.html" class="w3-bar-item w3-button">APPETISERS</a>
+            <a href="./pages/Mains.html" class="w3-bar-item w3-button">MAINS</a>
+            <a href="./pages/Desserts.html" class="w3-bar-item w3-button">DESSERTS</a>
+          </div>
+        </div>
+        <a href="./pages/Reservations.html" class="w3-bar-item w3-button w3-hide-small">RESERVATIONS</a>
+        <a href="./pages/Contacts.html" class="w3-bar-item w3-button w3-hide-small">CONTACT</a>
+        <a href="./pages/Staff_Public.html" class="w3-bar-item w3-button w3-hide-small">STAFF</a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
       </div>
-    </div>-->
-
-    <div class="w3-row w3-center">
-      <div class="w3-bar w3-small">
+      
+      <div id="nav-items" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-center">
+        <a href="./pages/Reservations.html" class="w3-bar-item w3-button w3-hide-large">RESERVATIONS</a>
+        <a href="./pages/Contacts.html" class="w3-bar-item w3-button w3-hide-large">CONTACT</a>
+        <a href="./pages/Staff_Public.html" class="w3-bar-item w3-button w3-hide-large">STAFF</a>
+        <div class="w3-dropdown-hover">
+          <button class="w3-button w3-hide-large w3-center">MENU <i class="fa fa-caret-down"></i></button>
+          <div class="w3-dropdown-content w3-bar-block w3-dark-grey">
+            <a href="./pages/Beverages.html" class="w3-bar-item w3-button">BEVERAGES</a>
+            <a href="./pages/Appetisers.html" class="w3-bar-item w3-button">APPETISERS</a>
+            <a href="./pages/Mains.html" class="w3-bar-item w3-button">MAINS</a>
+            <a href="./pages/Desserts.html" class="w3-bar-item w3-button">DESSERTS</a>
+          </div>
+        </div>
+      </div>
+    </div>  
+        <!--<div class="w3-bar w3-small">
         <a href="./home.html" class="w3-bar-item w3-button">HOME</a>
         <div class="w3-dropdown-hover">
           <button class="w3-button">MENU</button>
@@ -48,9 +70,9 @@
         </div>
         <a href="./pages/Reservations.html" class="w3-bar-item w3-button">RESERVATIONS</a>
         <a href="./pages/Contacts.html" class="w3-bar-item w3-button">CONTACT</a>
-        <a href="./pages/Staff_Public.html" class="w3-bar-item w3-button">STAFF</a>
-      </div>
-    </div>
+        <a href="./pages/Staff_Public.html" class="w3-bar-item w3-button">STAFF</a>-->
+       
+    
         
     <!-- Header with image -->
     <div class="bgimg w3-display-container">
@@ -64,5 +86,16 @@
         <p class="footer-text">Copyright – Craig Hutchinson, BIT607 Assignment 3, 2022</p>
       </div>
     </footer>
+    
+    <script>
+      function myFunction() {
+        var x = document.getElementById("nav-items");
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else { 
+          x.className = x.className.replace(" w3-show", "");
+        }
+      }
+      </script>
   </body>
 </html>
