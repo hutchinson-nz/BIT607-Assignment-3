@@ -20,13 +20,17 @@
   </head>
 
   <body>
+    <!-- The below naviagation combines two technique using w3.CSS. The nav bar incorporates a dropdown 
+      submenu which has the restaurant menu. When viewed on a small screen, with the aid of javascript, will
+      collapse the nav back to a 'hamburger' icon and expand when the user clicks on it. From here the restaurant
+      menu will be further expanded if clicked on. -->
     <header class="w3-display-container w3-center">
         <img src="./images/HaukaiLogo.png" class="w3-padding-small logo-size" alt="Haukai Restaurant Logo">
     </header>
 
     <div class="w3-row w3-center">
       <div class="w3-bar w3-center">
-        <a href="./home.html" class="w3-bar-item w3-button">HOME</a>
+        <a href="./home.html" class="w3-bar-item w3-button active-text">HOME</a>
         <div class="w3-dropdown-hover">
           <button class="w3-button w3-hide-small">MENU <i class="fa fa-caret-down"></i></button>
           <div class="w3-dropdown-content w3-bar-block w3-dark-grey">
@@ -56,25 +60,9 @@
           </div>
         </div>
       </div>
-    </div>  
-        <!--<div class="w3-bar w3-small">
-        <a href="./home.html" class="w3-bar-item w3-button">HOME</a>
-        <div class="w3-dropdown-hover">
-          <button class="w3-button">MENU</button>
-          <div class="w3-dropdown-content w3-card-4">
-            <a href="./pages/Beverages.html" class="w3-bar-item w3-button">BEVERAGES</a>
-            <a href="./pages/Appetisers.html" class="w3-bar-item w3-button">APPETISERS</a>
-            <a href="./pages/Mains.html" class="w3-bar-item w3-button">MAINS</a>
-            <a href="./pages/Desserts.html" class="w3-bar-item w3-button">DESSERTS</a>
-          </div>
-        </div>
-        <a href="./pages/Reservations.html" class="w3-bar-item w3-button">RESERVATIONS</a>
-        <a href="./pages/Contacts.html" class="w3-bar-item w3-button">CONTACT</a>
-        <a href="./pages/Staff_Public.html" class="w3-bar-item w3-button">STAFF</a>-->
-       
-    
+    </div>
         
-    <!-- Header with image -->
+    <!-- Header with image being served up by CSS-->
     <div class="bgimg w3-display-container">
     </div>
     
@@ -96,6 +84,6 @@
           x.className = x.className.replace(" w3-show", "");
         }
       }
-      </script>
+    </script>
   </body>
 </html>

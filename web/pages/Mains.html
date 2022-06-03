@@ -20,25 +20,45 @@
     </head>
   
     <body>
+        <!-- The below naviagation combines two technique using w3.CSS. The nav bar incorporates a dropdown 
+        submenu which has the restaurant menu. When viewed on a small screen, with the aid of javascript, will
+        collapse the nav back to a 'hamburger' icon and expand when the user clicks on it. From here the restaurant
+        menu will be further expanded if clicked on. -->
         <header class="w3-display-container w3-center">
             <img src="../images/HaukaiLogo.png" class="w3-padding-small logo-size" alt="Haukai Restaurant Logo">
         </header>
-      
+
         <div class="w3-row w3-center">
-            <div class="w3-bar w3-small">
+            <div class="w3-bar w3-center">
                 <a href="../home.html" class="w3-bar-item w3-button">HOME</a>
                 <div class="w3-dropdown-hover">
-                    <button class="w3-button">MENU</button>
-                    <div class="w3-dropdown-content w3-card-4">
-                        <a href="../pages/Beverages.html" class="w3-bar-item w3-button">BEVERAGES</a>
-                        <a href="../pages/Appetisers.html" class="w3-bar-item w3-button">APPETISERS</a>
-                        <a href="../pages/Mains.html" class="w3-bar-item w3-button">MAINS</a>
-                        <a href="../pages/Desserts.html" class="w3-bar-item w3-button">DESSERTS</a>
-                    </div>
+                <button class="w3-button w3-hide-small active-text">MENU <i class="fa fa-caret-down"></i></button>
+                <div class="w3-dropdown-content w3-bar-block w3-dark-grey">
+                    <a href="../pages/Beverages.html" class="w3-bar-item w3-button ">BEVERAGES</a>
+                    <a href="../pages/Appetisers.html" class="w3-bar-item w3-button">APPETISERS</a>
+                    <a href="../pages/Mains.html" class="w3-bar-item w3-button active-text">MAINS</a>
+                    <a href="../pages/Desserts.html" class="w3-bar-item w3-button">DESSERTS</a>
                 </div>
-                <a href="../pages/Reservations.html" class="w3-bar-item w3-button">RESERVATIONS</a>
-                <a href="../pages/Contacts.html" class="w3-bar-item w3-button">CONTACT</a>
-                <a href="../pages/Staff_Public.html" class="w3-bar-item w3-button">STAFF</a>
+                </div>
+                <a href="../pages/Reservations.html" class="w3-bar-item w3-button w3-hide-small">RESERVATIONS</a>
+                <a href="../pages/Contacts.html" class="w3-bar-item w3-button w3-hide-small">CONTACT</a>
+                <a href="../pages/Staff_Public.html" class="w3-bar-item w3-button w3-hide-small">STAFF</a>
+                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+            </div>
+        
+            <div id="nav-items" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-center">
+                <a href="../pages/Reservations.html" class="w3-bar-item w3-button w3-hide-large">RESERVATIONS</a>
+                <a href="../pages/Contacts.html" class="w3-bar-item w3-button w3-hide-large">CONTACT</a>
+                <a href="../pages/Staff_Public.html" class="w3-bar-item w3-button w3-hide-large">STAFF</a>
+                <div class="w3-dropdown-hover">
+                <button class="w3-button w3-hide-large w3-center active-text">MENU <i class="fa fa-caret-down"></i></button>
+                <div class="w3-dropdown-content w3-bar-block w3-dark-grey">
+                    <a href="../pages/Beverages.html" class="w3-bar-item w3-button">BEVERAGES</a>
+                    <a href="../pages/Appetisers.html" class="w3-bar-item w3-button">APPETISERS</a>
+                    <a href="../pages/Mains.html" class="w3-bar-item w3-button active-text">MAINS</a>
+                    <a href="../pages/Desserts.html" class="w3-bar-item w3-button">DESSERTS</a>
+                </div>
+                </div>
             </div>
         </div>
 
@@ -113,5 +133,16 @@
                 <p class="footer-text">Copyright – Craig Hutchinson, BIT607 Assignment 3, 2022</p>
             </div>
         </footer>
+
+        <script>
+            function myFunction() {
+              var x = document.getElementById("nav-items");
+              if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+              } else { 
+                x.className = x.className.replace(" w3-show", "");
+              }
+            }
+        </script>
     </body>
 </html>
