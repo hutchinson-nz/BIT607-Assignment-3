@@ -18,7 +18,7 @@ a {
   font-size: 1vw;
 }
 
-.iframes {
+.iframe-size iframe {
   width: 100%;
 }
 
@@ -65,5 +65,8 @@ a {
   }
   .nav-text, .drinks {
     font-size: 3vw;
+  }
+  .footer-text {
+    font-size: 2vw;
   }
 }
