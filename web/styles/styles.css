@@ -10,6 +10,14 @@ h1,h2,h3,h4,h5,h6 {
   font-size: 2vw;
 }
 
+a {
+  text-decoration: none;
+}
+
+.footer-text {
+  font-size: 1vw;
+}
+
 .iframes {
   width: 100%;
 }
@@ -42,6 +50,10 @@ h1,h2,h3,h4,h5,h6 {
 
 .nomargin {
   margin: 0;
+}
+
+.imagealign {
+  vertical-align: center;
 }
 
 @media only screen and (max-width: 600px) {
