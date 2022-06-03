@@ -29,6 +29,7 @@ a {
 
 .liststyle {
   list-style: none;
+  margin: 0;
 }
 
 .bgimg {
@@ -36,6 +37,10 @@ a {
     background-size: cover;
     background-image: url("../images/HeroPicWide.jpg");
     min-height: 90%;
+}
+
+.logo-size {
+  width: 40%;
 }
 
 .social-icons {
@@ -68,5 +73,8 @@ a {
   }
   .footer-text {
     font-size: 2vw;
+  }
+  .logo-size {
+    width: 60%;
   }
 }
