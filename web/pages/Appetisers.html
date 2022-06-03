@@ -20,23 +20,25 @@
   </head>
 
   <body>
-    <!-- Navbar (sit on top) -->
-    <div class="w3-row">
-      <div class="w3-bar w3-medium w3-win8-crimson w3-hover-opacity-off">
-        <a href="../home.html" class="w3-bar-item w3-button w3-mobile">HOME</a>
-        <a href="../pages/Reservations.html" class="w3-bar-item w3-button w3-mobile">RESERVATIONS</a>
-        <a href="../pages/Contacts.html" class="w3-bar-item w3-button w3-mobile">CONTACTS</a>
-        <a href="../pages/Staff_Public.html" class="w3-bar-item w3-button w3-mobile">STAFF</a>
-      </div>
-    </div>
+    <header class="w3-display-container w3-center">
+      <img src="../images/HaukaiLogo.png" class="w3-padding-small" style="width: 40%;" alt="Haukai Restaurant Logo">
+    </header>
 
-    <!--  This div sets up the sub navigation menu. The active page name is coloured different and isn't a link-->
-    <div class="w3-row">
-      <div class="w3-center w3-medium w3-padding-top-24">
-        <a href="../pages/Menu.html" class="w3-bar-item w3-button nav-text">BEVERAGES</a>
-        <a class="w3-bar-item w3-button headingcolor nav-text">APPETISERS</a>
-        <a href="../pages/Mains.html" class="w3-bar-item w3-button nav-text">MAINS</a>
-        <a href="../pages/Desserts.html" class="w3-bar-item w3-button nav-text">DESSERTS</a>
+    <div class="w3-row w3-center">
+      <div class="w3-bar">
+        <a href="../home.html" class="w3-bar-item w3-button">HOME</a>
+        <div class="w3-dropdown-hover">
+          <button class="w3-button">MENU</button>
+          <div class="w3-dropdown-content w3-card-4">
+            <a href="../pages/Beverages.html" class="w3-bar-item w3-button">BEVERAGES</a>
+            <a href="../pages/Appetisers.html" class="w3-bar-item w3-button">APPETISERS</a>
+            <a href="../pages/Mains.html" class="w3-bar-item w3-button">MAINS</a>
+            <a href="../pages/Desserts.html" class="w3-bar-item w3-button">DESSERTS</a>
+          </div>
+        </div>
+        <a href="../pages/Reservations.html" class="w3-bar-item w3-button">RESERVATIONS</a>
+        <a href="../pages/Contacts.html" class="w3-bar-item w3-button">CONTACT</a>
+        <a href="../pages/Staff_Public.html" class="w3-bar-item w3-button">STAFF</a>
       </div>
     </div>
 
