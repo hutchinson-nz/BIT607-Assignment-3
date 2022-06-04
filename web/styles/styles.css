@@ -36,7 +36,11 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url("../images/HeroPicWide.jpg");
-    min-height: 90%;
+    min-height: 85%;
+}
+
+.logo-size-home {
+  width: 60%;
 }
 
 .logo-size {

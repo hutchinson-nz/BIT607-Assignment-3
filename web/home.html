@@ -24,10 +24,6 @@
       submenu which has the restaurant menu. When viewed on a small screen, with the aid of javascript, will
       collapse the nav back to a 'hamburger' icon and expand when the user clicks on it. From here the restaurant
       menu will be further expanded if clicked on. -->
-    <header class="w3-display-container w3-center">
-        <img src="./images/HaukaiLogo.png" class="w3-padding-small logo-size" alt="Haukai Restaurant Logo">
-    </header>
-
     <div class="w3-row w3-center">
       <div class="w3-bar w3-center">
         <a href="./home.html" class="w3-bar-item w3-button active-text">HOME</a>
@@ -62,8 +58,10 @@
       </div>
     </div>
         
-    <!-- Header with image being served up by CSS-->
+    <!-- Header with image being served up by CSS. Logo sits on top and changes as screensize changes-->
     <div class="bgimg w3-display-container">
+      <img src="./images/Haukai-Logo-Large.png" class="w3-padding-small w3-display-middle w3-hide-small logo-size-home" alt="Haukai Restaurant Logo">
+      <img src="./images/Haukai-Logo-Small.png" class="w3-padding-small w3-display-middle w3-hide-medium w3-hide-large logo-size-home" alt="Haukai Restaurant Logo">
     </div>
     
     <footer class="w3-medium w3-centered">
